@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                batchFile 'mvn test'
+                batchFile 'docker build -t docker'
             }
             post {
                 always {
