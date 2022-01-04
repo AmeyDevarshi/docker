@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                batchFile 'docker build -t docker1'
+                batchFile 'docker build docker1'
             }
             post {
                 always {
