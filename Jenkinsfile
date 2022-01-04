@@ -16,10 +16,10 @@ pipeline {
             steps {
                 batchFile 'docker build docker1'
             }
-            post {
-                always {
-                    //junit 'target/surefire-reports/*.xml'
-                    clean ws
+//             post {
+//                 always {
+//                     //junit 'target/surefire-reports/*.xml'
+//                     clean ws
                 }
             }
         }
